@@ -17,7 +17,7 @@
                 <div class = "row">
                     <img src="resources/img/logo.png" alt="forkify logo" class="logo">
                     <ul class="main-nav">
-                    <li><a href="#section-meals">Food delivery</a></li>
+                    <li><a href="#section-circle">Add friend</a></li>
                     <li><a href="#section-cities">Our cities</a></li>
                     <li><a href="#section-login">Login</a></li>
                     <li><a href="#section-signup">Sign up</a></li>  
@@ -40,11 +40,11 @@
                     <h3>Lisbon</h3>
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
-                        1600+ happy eaters
+                        90+ happy eaters
                     </div>
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
-                        60+ top chefs
+                        6+ top restaurants
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -57,11 +57,11 @@
                     <h3>San Francisco</h3>
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
-                        3700+ happy eaters
+                        37+ happy eaters
                     </div>
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
-                        160+ top chefs
+                        10+ top restaurants
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -74,11 +74,11 @@
                     <h3>Berlin</h3>
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
-                        2300+ happy eaters
+                        23+ happy eaters
                     </div>
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
-                        110+ top chefs
+                        11+ top restaurants
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -91,11 +91,11 @@
                     <h3>London</h3>
                     <div class="city-feature">
                         <i class="ion-ios-person icon-small"></i>
-                        1200+ happy eaters
+                        12+ happy eaters
                     </div>
                     <div class="city-feature">
                         <i class="ion-ios-star icon-small"></i>
-                        50+ top chefs
+                        5+ top restaurants
                     </div>
                     <div class="city-feature">
                         <i class="ion-social-twitter icon-small"></i>
@@ -103,8 +103,51 @@
                     </div>
                 </div> 
             </div>
-        
         </section>
+        
+        <section class="section-circle" id="section-circle">
+           <div class="row">
+                <h2>Expand Your Circle</h2>    
+            </div> 
+            <div class="row">
+                <form method="post" class="circle" enctype="text/plain">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="circle-mobile">Mobile Number</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="circle-mobile" id="circle-mobile" placeholder="Your mobile number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="circle-password">Password</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="password" name="circle-password" id="circle-password" placeholder="Your password" required>
+                        </div>
+                    </div>
+                     <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="circle-friend">Friend</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                           <input type="text" name="circle-friend" id="circle-friend" placeholder="Your Friend's mobile number" required style="margin-bottom: 30px">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3 ">
+                            <input type="submit" value="Add" class="circle-submit">
+                        </div>
+                    </div>
+                </form>  
+            </div>
+        </section>
+        
+        
         <section class="section-meals" id="section-meals">
             <ul class="meals-showcase clearfix">
                 <li>
@@ -179,7 +222,7 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3 ">
-                            <input type="submit" value="Log in!" class="login-submit">
+                            <input type="submit" value="Log in" class="login-submit">
                             <a class="create-acc" href="#section-signup">No Account ?</a>
                         </div>
                     </div>
@@ -279,7 +322,7 @@
                             <label>&nbsp;</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" value="Sign up!" class="signup-submit">
+                            <input type="submit" value="Sign up" class="signup-submit">
                         </div>
                     </div>
                 </form>

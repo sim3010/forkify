@@ -375,7 +375,7 @@ header{
 /* ----------------------------------------------- */
 
 .section-cities {
-    margin-bottom: 100px;
+    
 }
 .box img {
     width : 100%;
@@ -499,7 +499,7 @@ cite img {
 /* FORM */
 /* ----------------------------------------------- */
 
-.login,.signup {
+.login,.signup,.circle {
     width: 60%;
     margin: 0 auto;
 }
@@ -582,4 +582,6 @@ footer p {
     font-size: 90%;
 }
 
-
+.section-circle {
+    margin-bottom: 100px;
+}

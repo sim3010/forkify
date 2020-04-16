@@ -28,4 +28,19 @@ export default class Customer{
     persistData(){
         sessionStorage.setItem('customer',JSON.stringify(this.data));
     }
+
+    async postCustomerFriend(friendMobile){
+
+        const res = await axios({
+            method : 'post',
+            url : `http://localhost/jsdemo/webapi/customers/${this.mobile}/circle`,
+            data : friendMobile,
+            headers : {
+                'content-type' : 'application/json',
+            },
+        });
+        console.log(res);
+        return res.data;
+
+    }
 }
