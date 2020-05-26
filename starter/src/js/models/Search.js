@@ -9,7 +9,7 @@ export default class Search{
 
 async getRestaurants(){
     //const proxy = 'https://cors-anywhere.herokuapp.com/';
-    const res = await axios(`http://localhost/jsdemo/webapi/restaurants/${this.location}`);
+    const res = await axios(`http://localhost:8081/jsdemo/webapi/restaurants/${this.location}`);
     this.result = res.data;
     this.persistData();
     console.log(this.result);

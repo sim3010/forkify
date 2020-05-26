@@ -7,7 +7,7 @@ export default class Restaurant{
     
     async getDishesOfRestaurant(){
         try{
-            const res = await axios(`http://localhost/jsdemo/webapi/restaurants/${this.id}/dishes`);
+            const res = await axios(`http://localhost:8081/jsdemo/webapi/restaurants/${this.id}/dishes`);
             this.rest = res.data;
             /*this.dishName = res.data.dishName;
             this.category = res.data.category;

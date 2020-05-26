@@ -8,10 +8,10 @@ export default class Order{
     }
     
     async postOrder(order){
-
+        console.log(order);
     const res = await axios({
         method: 'post',
-        url: 'http://localhost/jsdemo/webapi/customers/orders',
+        url: 'http://localhost:8081/jsdemo/webapi/customers/orders',
         data: JSON.stringify(order),
         headers: {
         'content-type': 'application/json',
@@ -20,7 +20,7 @@ export default class Order{
         console.log(res);
     }
     async getOrders(custId){
-        const res = await axios(`http://localhost/jsdemo/webapi/customers/${this.custId}/orders`);
+        const res = await axios(`http://localhost:8081/jsdemo/webapi/customers/${this.custId}/orders`);
         /*
         this.orderId = orderId;
 		this.restId = restId;

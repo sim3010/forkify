@@ -7,7 +7,7 @@ export default class Delivery{
     }
     async getDeliveryPersons(){
         try{
-            const res = await axios(`http://localhost/jsdemo/webapi/deliveryPerson/${this.location}`);
+            const res = await axios(`http://localhost:8081/jsdemo/webapi/deliveryPerson/${this.location}`);
             this.deliveryPersons = res.data;
             /*this.divPersonId = res.data.divPersonId;
             this.divPersonName = res.data.divPersonName;

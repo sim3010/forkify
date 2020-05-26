@@ -7,7 +7,7 @@ export default class Customer{
     }
     
     async getCustomer(){
-        const res = await axios(`http://localhost/jsdemo/webapi/customers/${this.mobile}?password=${this.password}`);
+        const res = await axios(`http://localhost:8081/jsdemo/webapi/customers/${this.mobile}?password=${this.password}`);
         this.data = res.data;
         console.log(res);
     }
@@ -15,7 +15,7 @@ export default class Customer{
     async postCustomer(cust){
         const res = await axios({
             method: 'post',
-            url: `http://localhost/jsdemo/webapi/customers`,
+            url: `http://localhost:8081/jsdemo/webapi/customers`,
             data: JSON.stringify(cust),
             headers: {
                 'content-type': 'application/json',
@@ -33,7 +33,7 @@ export default class Customer{
 
         const res = await axios({
             method : 'post',
-            url : `http://localhost/jsdemo/webapi/customers/${this.mobile}/circle`,
+            url : `http://localhost:8081/jsdemo/webapi/customers/${this.mobile}/circle`,
             data : friendMobile,
             headers : {
                 'content-type' : 'application/json',

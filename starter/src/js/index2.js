@@ -237,10 +237,16 @@ const controlPlaceOrder =async () =>{
     //POST ORDER TO THE CUSTOMER ORDERS
     
     state.order = new Order();
+    var d = new Date();
+    var sqldate = [
+        d.getFullYear(),
+        ('0' + (d.getMonth() + 1)).slice(-2),
+        ('0' + d.getDate()).slice(-2)
+        ].join('-');
     await state.order.postOrder({orderId : Date.now(),
                      restId : state.cart.restId,
-                     custId : state.customer.mobile,//9643041712
-                     date : new Date(),
+                     mobile : state.customer.mobile,//9643041712
+                     date : sqldate,
                      orderStatus : "placed"}
                    );
     alert(`Your order assigned to ${divMan.divPersonName} will be delivered soon!!`);
