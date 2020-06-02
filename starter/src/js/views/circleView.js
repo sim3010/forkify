@@ -21,7 +21,7 @@ export const renderCircle = (recomm) =>{
 
 export const renderRecommendButton = () =>{
     const markup = `  
-                        <div class="results__data recommend__btn" style=" margin-top: 200px;
+                        <div class="results__data recommend__btn" style=" margin-top: 100px;
 display: flex;align-items: center;justify-content: center;">
                         <button class="btn search__btn btn-recomm">
                             <svg class="search__icon">

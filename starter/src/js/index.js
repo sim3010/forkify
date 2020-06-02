@@ -38,7 +38,7 @@ const controlPostFriend = async (cust) => {
     await customer.getCustomer();
     if(customer.data){
         const res = await customer.postCustomerFriend(cust.friendMobile);
-        if(res)
+        if(res == 204)
         alert('Friend Added !');
         else
         alert('Oops!! Wrong friend information..Try again')
@@ -73,7 +73,8 @@ elements.signup.addEventListener('click',e=>{
     address : form.get('address'),
     custName : form.get('name'),
     password : form.get('password'),
-    location : form.get('location')
+    location : form.get('location'),
+    email : form.get('email')
     }
     controlPostCustomer(cust);
 });

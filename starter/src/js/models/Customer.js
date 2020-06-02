@@ -40,7 +40,7 @@ export default class Customer{
             },
         });
         console.log(res);
-        return res.data;
+        return res.status;
 
     }
 }
